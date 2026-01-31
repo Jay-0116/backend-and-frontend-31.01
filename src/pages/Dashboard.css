@@ -1,0 +1,58 @@
+/* Dashboard.css */
+
+/* Container holding Sidebar + Main content */
+.dashboard-container {
+  display: flex;
+}
+
+.dashboard-main {
+  margin-left: 240px;
+  padding: 30px;
+  width: 100%;
+  background: #f1f5f9;
+  min-height: 100vh;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.card h3 {
+  margin: 0;
+  color: #64748b;
+}
+
+.card p {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+/* Optional: different colors for roles */
+.dashboard-content.Admin {
+  border-left: 6px solid #e74c3c; /* red */
+}
+.dashboard-content.Manager {
+  border-left: 6px solid #3498db; /* blue */
+}
+.dashboard-content.Support {
+  border-left: 6px solid #f1c40f; /* yellow */
+}
+.dashboard-content.User {
+  border-left: 6px solid #2ecc71; /* green */
+}
+.dashboard-content.Guest {
+  border-left: 6px solid #9b59b6; /* purple */
+}
